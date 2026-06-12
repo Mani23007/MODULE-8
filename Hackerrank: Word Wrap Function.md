@@ -25,10 +25,25 @@ To write a Python function that takes a long string and a specified width, and r
 ---
 
 
-## 🧪 Program
-Add Code Here
+## 🧪 Program:
+```python
+def wrap(string, max_width):
+    wrapped_lines = []
 
-## Sample Output
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i + max_width])
 
-## Result
+    return '\n'.join(wrapped_lines)
 
+text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+width = 4
+
+print(wrap(text, width))
+```
+
+## Output:
+<img width="468" height="277" alt="image" src="https://github.com/user-attachments/assets/feed55b9-ff7f-4086-a179-62c76f03a2b7" />
+
+
+## Result:
+Thus, the program is executed successfully.
