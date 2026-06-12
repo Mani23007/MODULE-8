@@ -19,9 +19,20 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
+```python
+n = int(input())
 
-ADD CODE HERE
+scores = list(map(int, input().split()))
 
-## OUTPUT
+scores = list(set(scores))
+scores.sort()
 
-## RESULT
+print(scores[-2])
+```
+
+## OUTPUT:
+<img width="473" height="179" alt="image" src="https://github.com/user-attachments/assets/8d19a5ce-4e33-4ffa-9487-4cb5eb8c99b6" />
+
+
+## RESULT:
+Thus,the program is executed successfully.
