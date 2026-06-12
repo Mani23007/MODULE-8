@@ -25,12 +25,28 @@ To write a Python program to:
 
 ---
 
-## 💻  Program
+## 💻  Program:
+```python
+students = []
 
-Add Code Here
+n = int(input())
 
-## Output
+for i in range(n):
+    name = input()
+    grade = float(input())
+    students.append([name, grade])
 
-## Result
+grades = sorted(set([student[1] for student in students]))
+second_lowest = grades[1]
+
+for name in sorted([student[0] for student in students if student[1] == second_lowest]):
+    print(name)
+```
+## Output:
+<img width="489" height="364" alt="image" src="https://github.com/user-attachments/assets/4cc81c84-d089-477a-88b5-725f3bf58a85" />
+
+
+## Result:
+Thus,the program is executed successfully.
 
 
